@@ -44,6 +44,7 @@
 
   .categories{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 10px;
     gap: 100px;
     margin-top: 10px;
@@ -66,6 +67,7 @@
 
 .Electronics{
     display: flex;
+    flex-wrap: wrap;
     gap: 80px;
     padding-top: 30px;
     margin-top: 10px;
@@ -87,10 +89,11 @@
 
 .toys{
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    margin-top: 50px;
    padding-top: 10px;
-   height: 250px
+   height: 500px
 
    
 
@@ -107,4 +110,33 @@
    
  }
 
+ @media screen and (max-width: 480px){
+  body .categories   {
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+ }
+
+ @media screen and (max-width: 480px){
+   .Electronics   {
+    
+    display: flex;
+    flex-direction: column;
+  }
+
+ }
+ @media screen and (max-width: 480px){
+  .toys  {
+    
+    display: flex;
+    flex-direction: column;
+     
+    
+    
+  }
+
+ }
+ 
    
